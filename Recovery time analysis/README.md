@@ -7,6 +7,7 @@ Input files
 
 Matlab scripts
 1. Recovery_time_analysis.m - This is the main script. Here is where you specify the input parameters. It also runs the Monte Carlo Simulation to generate probabilistic distribution of recovery time
-2. cpm_new.m - This script runs the critical path analysis for each simulation (There is no need to modify this script).
-3. buildGraph.m - This script builds the intervent graph (There is no need to modify this script).
-4. activityToIndex.m - This script is used to convert predecessors and successors to indices for easier manipulation (There is no need to modify this script).
+2. randp.m - This script is used to generate PERT distibution for each task using the specified a, m, and b
+3. cpm_new.m - This script runs the critical path analysis for each simulation (There is no need to modify this script).
+4. buildGraph.m - This script builds the intervent graph (There is no need to modify this script).
+5. activityToIndex.m - This script is used to convert predecessors and successors to indices for easier manipulation (There is no need to modify this script).
