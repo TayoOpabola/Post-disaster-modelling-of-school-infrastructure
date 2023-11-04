@@ -10,7 +10,14 @@
 
 
 %% Input parameters
-Fragility = [0.35 0.4; 0.5 0.4; 0.5 0.4; 1 0.4]; % Fragility functions of buildings exceeding the FL1 functionality level. first column = median value and second column = logarithmic dispersion
+D_02s = load('put location of mat file');
+D_PGA = load('put location of mat file');
+
+%median values used for analysis
+D_02s = median(D_02s.D_02s);
+D_PGA= median(D_PGA.D_PGA);
+
+Fragility = [0.2 0.4; 0.5 0.4; 0.5 0.4; 1 0.4]; % Fragility functions of buildings exceeding the FL1 functionality level. first column = median value and second column = logarithmic dispersion
 N_s = 1000; % how many Monte-Carlo simulations to run
 
 % Information on school buildings
