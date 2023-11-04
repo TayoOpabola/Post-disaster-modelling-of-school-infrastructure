@@ -78,7 +78,7 @@ for i = 1: length (Type)
     
         Sa = lognrnd(log(median), sigma, [N_s 1]);
         
-        if Type(i)==1 || Type(i)== 3
+        if Type(i)==2 || Type(i)== 4
             Sa_demand = D_02s_final(:,i);
         else
             Sa_demand = D_PGA_final(:,i);
